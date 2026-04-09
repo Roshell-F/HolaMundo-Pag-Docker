@@ -1,0 +1,96 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Bienvenido";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <style>
+        /* Reset y estilo base */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #ffe5e5, #ff4d4d);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            padding: 50px 40px;
+            width: 450px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            color: #ff1a1a;
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #333;
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            padding: 12px 30px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 12px;
+            background-color: #ff1a1a;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #b30000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="card">
+            <h1>Hola Mundo</h1>
+            <p>Bienvenida desde Roshell Fajardo 20241777!</p>
+            <button class="button" onclick="alert('¡Disfruta tu app roja!')">Haz clic aquí</button>
+        </div>
+    </div>
+
+
+</body>
+</html>
