@@ -18,14 +18,14 @@ jobs:
         with:
           dotnet-version: '10.0.x'
 
-      - name: Restaurar dependencias
-        run: dotnet restore
+      - name: Restaurar SOLO la app
+        run: dotnet restore HolaMundoApp.csproj
 
-      - name: Compilar solo la app
+      - name: Compilar SOLO la app
         run: dotnet build HolaMundoApp.csproj --no-restore
 
       - name: Ejecutar pruebas
-        run: echo "Tests omitidos"
+        run: echo "Tests omitidos en CI"
 
       - name: Construir imagen Docker
         run: docker build -t esmeraly/hola-mundo-app:latest .
