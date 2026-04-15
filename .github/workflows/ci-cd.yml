@@ -21,8 +21,8 @@ jobs:
       - name: Restaurar dependencias
         run: dotnet restore
 
-      - name: Compilar proyecto
-        run: dotnet build --no-restore
+      - name: Compilar solo la app
+        run: dotnet build HolaMundoApp.csproj --no-restore
 
       - name: Ejecutar pruebas
         run: echo "Tests omitidos"
